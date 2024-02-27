@@ -11,5 +11,8 @@ export default function reducer(state = initialState, action) {
         ...state,
         accessToken: action.accessToken,
       };
+
+    default:
+      return state;
   }
 }
