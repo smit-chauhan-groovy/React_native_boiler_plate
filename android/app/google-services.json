@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "410816954325",
+    "project_id": "new-react-firebase-c7e76",
+    "storage_bucket": "new-react-firebase-c7e76.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410816954325:android:9689eae4ddff5ecd7d075c",
+        "android_client_info": {
+          "package_name": "com.myProject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa1py7GWUFr6COAWQQLdd0MLUumj8aukc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410816954325:android:92b59d2f55320eed7d075c",
+        "android_client_info": {
+          "package_name": "com.myproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa1py7GWUFr6COAWQQLdd0MLUumj8aukc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410816954325:android:89ff714a75e9e0417d075c",
+        "android_client_info": {
+          "package_name": "react.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa1py7GWUFr6COAWQQLdd0MLUumj8aukc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
