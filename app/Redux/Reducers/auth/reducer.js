@@ -2,6 +2,7 @@ import types from './actions';
 
 const initialState = {
   accessToken: '',
+  activeDrawerTab: {},
 };
 
 export default function reducer(state = initialState, action) {
@@ -10,6 +11,12 @@ export default function reducer(state = initialState, action) {
       return {
         ...state,
         accessToken: action.accessToken,
+      };
+
+    case types.SET_ACTIVE_DRAWER_TAB:
+      return {
+        ...state,
+        activeDrawerTab: action.activeDrawerTab,
       };
 
     default:

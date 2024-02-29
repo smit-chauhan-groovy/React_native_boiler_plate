@@ -3,7 +3,7 @@ import {
   useDrawerProgress,
 } from '@react-navigation/drawer';
 import {NavigationContainer} from '@react-navigation/native';
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {Dimensions, View} from 'react-native';
 import CustomDrawer from './CustomDrawer';
 import Home from '../screens/Home';
@@ -16,8 +16,30 @@ import {
 } from '@react-navigation/stack';
 import Services from '../screens/Services';
 import Profile from '../screens/Profile';
+import SplashScreen from '../screens/SplashScreen';
 
 const StartingNav = () => {
+  const [bool, setBool] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setBool(false);
+    }, 2000);
+  }, []);
+
+  const SplashNavigator = () => {
+    const Home = createStackNavigator();
+    return (
+      <Home.Navigator>
+        <Home.Screen
+          name="SplashScreen"
+          component={SplashScreen}
+          options={{headerShown: false, animationEnabled: false}}
+        />
+      </Home.Navigator>
+    );
+  };
+
   const Drawer = createDrawerNavigator();
 
   const DrawerNavigation = () => {
@@ -118,7 +140,7 @@ const StartingNav = () => {
 
   return (
     <NavigationContainer>
-      <HomeNavigator />
+      {bool ? <SplashNavigator /> : <HomeNavigator />}
     </NavigationContainer>
   );
 };
