@@ -17,6 +17,7 @@ import {
 import Services from '../screens/Services';
 import Profile from '../screens/Profile';
 import SplashScreen from '../screens/SplashScreen';
+import WalkThrough from '../screens/WalkThrough';
 
 const StartingNav = () => {
   const [bool, setBool] = useState(true);
@@ -112,7 +113,7 @@ const StartingNav = () => {
   const HomeNavigator = () => {
     const Home = createStackNavigator();
     return (
-      <Home.Navigator initialRouteName="Home">
+      <Home.Navigator initialRouteName="Walkthrough">
         <Home.Screen
           name="Drawer"
           component={DrawerNavigation}
@@ -130,6 +131,20 @@ const StartingNav = () => {
         <Home.Screen
           name="Profile"
           component={Profile}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Home.Screen
+          name="Walkthrough"
+          component={WalkThrough}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Home.Screen
+          name="About"
+          component={About}
           options={{
             headerShown: false,
           }}
